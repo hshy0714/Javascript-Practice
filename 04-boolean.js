@@ -15,4 +15,9 @@ console.log(v2, typeof v2, v2 == undefined);
 
 //  == vs ===
 console.log(123 == "123");  //  number == string: 내용만 비교
-console.log(123 === "123");
+console.log(123 === "123"); //  === : 내용과 데이터의 타입까지 전부 비교
+
+//  number,string이 비어있으면 boolean은 false, 내용이 있으면 true
+console.log(Boolean("String"), Boolean(""));    //  .length > 0, .length = 0
+console.log(Boolean(123), Boolean(0));  //  != 0, ==0
+
